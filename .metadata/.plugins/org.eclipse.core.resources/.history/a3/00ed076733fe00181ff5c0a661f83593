@@ -1,0 +1,8 @@
+package com.companyname.springapp.web;
+
+public class HelloControllerTests {
+	
+	@Test
+	public void testHandleRequestView( )
+
+}

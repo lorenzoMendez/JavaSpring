@@ -1,0 +1,10 @@
+package com.companyname.springapp.web;
+
+public class HelloControllerTests {
+	
+	@Test
+	public void testHandleRequestView() throws Exception {
+		HelloController controller = new HelloController();
+	}
+
+}
