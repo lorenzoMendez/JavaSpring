@@ -1,0 +1,5 @@
+package com.companyname.springapp.service;
+
+public class SimpleProductManager {
+
+}

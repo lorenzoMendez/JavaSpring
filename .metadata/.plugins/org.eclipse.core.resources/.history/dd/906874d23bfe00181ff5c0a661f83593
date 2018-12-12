@@ -1,0 +1,9 @@
+package com.companyname.springapp.service;
+
+public interface ProductManager {
+	
+	public void increasePrice( int percentage );
+	
+	public Liz<Product> getProducts();
+
+}
