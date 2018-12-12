@@ -1,6 +1,7 @@
 package com.companyname.springapp.web;
 
 import java.io.IOException;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -18,9 +19,12 @@ public class HelloController {
 	@RequestMapping( value="/hello.htm" )
 	public ModelAndView handleRequest( HttpServletRequest request, HttpServletResponse response )
 		throws ServletException, IOException {
-		logger.info( "Regresando Vista Hello" );
-		
-		return new ModelAndView( "hello.jsp" );
+		// Obtiene la fecha actual
+		String now = (new Date()).toString();
+        logger.info("Returning hello view with " + now);
+        
+        // Regresa la vista con datos encapsulados	
+        return new ModelAndView("hello", "now", now);
 	}
 
 }
